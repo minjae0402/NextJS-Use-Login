@@ -1,10 +1,8 @@
 import { useSession, signIn, signOut } from 'next-auth/react';
-import { usePathname } from 'next/navigation';
 import ColorButton from '@/lib/ColorButton';
 
 export default function Home() {
   const { data: session } = useSession();
-  const pathName = usePathname();
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
